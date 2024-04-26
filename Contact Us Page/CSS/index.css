@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(../IMG/bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(30, 30, 56, 0.801);
+    color: #fff;
+    /* overflow: hidden; */
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;   
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    text-align: center;
+}
+.content h2{
+    font-size: 2em;
+    padding: 5px 0;
+}
+.content p{
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+}
+.container .contactInfo{
+    width: 50%;
+    /* padding: 0px 200px; */
+    margin-right:20px;
+}
+.container .contactInfo .box{
+    margin-bottom: 40px;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    background-color: #fff;
+    height: 60px;
+    min-width:60px ;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container .contactInfo .box .text{
+    margin-left: 20px;
+}
+.container .contactInfo .box .text h2{
+    color: rgb(255, 145, 0);
+}
+.container .messageBox{
+    width: 50%;
+    background-color: #fff;
+    color: black;
+    padding: 30px 50px;
+    border-radius: 5%;
+}
+.container .messageBox h2{
+    padding-bottom: 20px;
+}
+
+.container .messageBox .inputBox{
+    width: 100%;
+    padding: 5px 0;
+    outline: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+.container .messageBox .inputBox input,
+.container .messageBox .inputBox textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    resize: none;
+    padding: 10px 0;
+    outline: none;
+    font-size: 20px;
+}
+.container .messageBox .inputBox input ~ span,
+.container .messageBox .inputBox textarea ~ span{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    margin: 5px 0;
+    transition: 0.5s;
+    pointer-events: none;
+    font-family: 16px;
+}
+.container .messageBox .inputBox input:focus ~ span,
+.container .messageBox .inputBox input:valid ~ span{
+    color:  rgb(255, 145, 0);
+    transform: translateY(-25px);
+    font-family: 12px;
+}
+.container .messageBox .inputBox textarea:focus ~ span,
+.container .messageBox .inputBox textarea:valid ~ span{
+    color:  rgb(255, 145, 0);
+    transform: translateY(-25px);
+    font-family: 12px;
+}
+.container .messageBox .inputBox input[type="submit"]{
+    border: none;
+    width: 50%;
+    background-color:rgb(255, 145, 0);
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.container .messageBox .inputBox input[type="submit"]:hover{
+    color: white;
+    background-color:rgb(185, 106, 3);
+}
+
+@media only screen and (max-width:964px) {
+    section{
+        padding: 10px;
+        margin: 0%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0%;
+        
+    }
+    .container .contactInfo, .container .messageBox{
+        width: 100%;
+        padding: 20px;
+    }
+    
+}
