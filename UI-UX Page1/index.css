@@ -1,0 +1,250 @@
+:root {
+    --primary-color:rgb(226, 150, 161);
+    --black:#13131a;
+    --white:#fff;
+    --secondary-color:rgb(255, 196, 0);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 203, 211, 0.473);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    padding-top: 10px;
+}
+nav .icon{
+    padding-left: 20px;
+    margin-right: 10px;
+    width: 75px;
+}
+nav .icon img{
+    width: 100%;
+}
+nav .icon i{
+    font-size: 2em;
+}
+nav .tabs ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 10px;
+}
+nav .tabs .home{
+    color: var(--primary-color);
+}
+nav .tabs li a{
+    color: var(--black);
+}
+nav ul li i{
+    font-size: small;
+    color: var(--black);
+}
+nav .accounts{
+    margin-right:20px ;
+}
+nav .accounts i{
+    background-color: #fff;
+    padding: 5px;
+    color: var(--primary-color);
+}
+nav .accounts .sign span{
+    color: black;
+    margin-left: 5px;
+}
+main{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+.certifications{
+    width: 500px;
+    height: auto;
+    background-color: var(--white);
+    margin: 0 10px;
+    padding: 20px 30px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+#certifications1{
+    height: 43vh;
+}
+#certifications1 p{
+    line-height: 25px;
+}
+.certifications h2{
+    padding: 5px 0;
+}
+.certifications p{
+    text-align: justify;
+    padding: 10px 0 20px 0;
+}
+.certifications .certImages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.certifications .images{
+    width: 30%;
+}
+.certifications img{
+    width: 100%;
+}
+.educate .textboxParent{
+    display: flex;
+    flex-direction: row;
+}
+.educate .textboxParent .textBox{
+    display: flex;
+    padding-right: 50px;
+}
+.educate .textboxParent .textBox .boxIcon{ 
+    margin-right: 10px;
+    width: 25px;
+}
+section .popularCourses{
+    height: 45vh;
+    width: 80%;
+    margin-top:60px;
+    position: relative;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .popularCourses .blogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    position: relative;
+}
+section .popularCourses h2{
+    text-align: center;
+    padding: 25px 0;
+}
+section .popularCourses .blogs .blog{
+    width: 32%;
+    position: relative;  
+}
+section .popularCourses .blogs .blog img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+section .popularCourses .blogs .blog .overlay{
+    position: absolute;
+    bottom: 1px;
+    /* background-color: rgb(0, 0, 0); */
+    background: rgba(41, 41, 61, 0.3);
+    width: 100%;
+    transition: .5s ease;
+    /* opacity: 0; */
+    color: white;
+    font-size: 15px;
+    padding: 30px;
+    padding-top: 49%;
+    justify-content: space-between;
+    border-radius: 20px;
+    display: flex;
+}
+section .popularCourses .blogs .blog .overlay .name{
+    display: flex;
+}
+section .popularCourses .blogs .blog .overlay .imgRounded{
+    width: 30px;
+    margin-right: 5px;
+}
+section .popularCourses .blogs .blog .overlay span{
+    font-weight: 600;
+    font-size: small;
+}
+section .popularCourses .blogs .blog .overlay .more{
+    background-color:var(--secondary-color);
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    align-self: flex-end;
+}
+section .popularCourses .blogs .blog .overlay .more a{
+    color: var(--white);
+}
+
+@media only screen and (max-width:1040px) {
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+    section .popularCourses{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    section .popularCourses .blogs{
+        flex-direction: column;
+        width: 80%;
+        /* margin: auto; */
+    }
+    section .popularCourses .blogs .blog{
+        width: 100%;
+        margin: 5px 0;
+        /* position: relative;   */
+    }
+    .certifications{
+        width: 100%;
+    }
+    .certifications .certImages{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        box-shadow: var(--box-shadow);
+        padding-top: 10px;
+    }
+    nav .tabs ul li{
+        display: block;
+        font-weight: bold;
+        padding: 3px 10px;
+    }
+    nav .accounts{
+        display: flex;
+        flex-direction: column;
+        margin-right:20px ;
+        background-color: var(--primary-color);
+    }
+}
