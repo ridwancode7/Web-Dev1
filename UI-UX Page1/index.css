@@ -14,7 +14,6 @@
 }
 section{
     width: 100%;
-    height: 100%;
     background-color: rgba(255, 203, 211, 0.473);
     align-items: center;
     justify-content: center;
@@ -70,6 +69,7 @@ nav .accounts .sign span{
     margin-left: 5px;
 }
 main{
+    width: 100%;
     height: 40vh;
     display: flex;
     flex-direction: row;
@@ -210,6 +210,7 @@ section .popularCourses .blogs .blog .overlay .more a{
     section .popularCourses .blogs{
         flex-direction: column;
         width: 80%;
+        gap: 10px 0;
         /* margin: auto; */
     }
     section .popularCourses .blogs .blog{
@@ -219,6 +220,7 @@ section .popularCourses .blogs .blog .overlay .more a{
     }
     .certifications{
         width: 100%;
+        padding: 5px;
     }
     .certifications .certImages{
         width: 100%;
