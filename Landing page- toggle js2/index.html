@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <a href="index.html"><img src="IMG/gradcap.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="">HOME</a>
+                        <a href="">CONTACT</a>
+                        <a href="">BLOG</a>
+                        <a href="">ABOUT</a>
+                        <a href="">CONTENT</a>
+                        
+                    </li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+                
+        </nav>
+        <div class="text">
+            <h2>Kwara State Polytechnic</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ie! Quisquam, officia ex! Vitae delectus nobis ex a velit illo odio facilis, distinctio non necessitatibus autem quo fuga, eius quos doloribus ipsam praesentium corporis laboriosam!</p>
+            <a href=""><button>Click here to apply</button></a>
+            
+        </div>
+    </section>
+    <script src="../bootstrap-icons/bootstrap-icons.json"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.display = "block";
+        }
+        function hideMenu(){
+            navLinks.style.display = "none";
+        }
+        
+    </script>
+</body>
+</html>
